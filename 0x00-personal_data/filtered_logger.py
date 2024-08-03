@@ -46,6 +46,7 @@ def get_logger() -> logging.Logger:
     log.addHandler(sh)
     return log
 
+
 def get_db() -> mysql.connector.connection.MySQLConnection:
     """doc doc doc"""
     username = os.getenv("PERSONAL_DATA_DB_USERNAME", "root")
