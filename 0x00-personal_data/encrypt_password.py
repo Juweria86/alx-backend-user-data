@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-""" returns a salted, hashed password """
+""" module doc """
 import bcrypt
 
 
 def hash_password(password: str) -> bytes:
-    """doc doc doc"""
+    """returns a salted, hashed password"""
     return bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt())
 
 
